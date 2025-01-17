@@ -1,0 +1,257 @@
+body::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(43deg, #4158D0, #C850C0);
+    border-radius: 10px; /* Smooth, rounded edges */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+body{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    background-color: #282C34;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    
+}
+.logo{
+    background-image: url(images/logo.png);
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.text{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+      
+}
+.text-p{
+    font-size: 28px;
+    font-weight: 600;
+    color:white;
+    opacity: 0.8;
+}
+.go-to-button{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top:30px;
+}
+
+.button{
+    font-size: 28px;
+    font-weight: 600;
+    color:white;
+    opacity: 0.8;
+    text-decoration: none;
+    border: 4px solid transparent;
+    
+    padding: 10px 12px;
+    background-color: transparent; 
+    cursor: pointer; 
+    background-clip: padding-box; 
+    border-image: linear-gradient(43deg, #4158D0, #C850C0) 1; 
+    transition: all 0.3s ease; 
+}
+.button:hover {
+    background-color: #C850C0; /* Background color on hover */
+}
+
+.who-choose{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+.who-choose-1{
+    color: #C850C0;
+    font-weight: 900;
+    font-size: 22px;
+}
+.who-choose-2{
+    margin-top: 15px;
+    font-size: 18px;
+    color: white;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+.persons{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+}
+.person{
+    height: 75px;
+    width: 75px;
+    background-position: center;
+    background-size: cover;
+    
+    margin-left: 10px;
+    border:1px transparent solid;
+    border-radius: 50%;
+}
+#a{
+    background-image: url(images/10682776.jpg);
+}
+#b{
+    background-image: url(images/Jeremy_Meeks_Mug_Shot.jpg);
+
+}
+#c{
+    background-image: url(images/Xxxtentacion_mugshot.jpg);
+}
+.person:hover{
+    border:2px #C850C0 solid;
+    transition:  0.2s; 
+
+}
+.suggest{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+.suggest-p{
+    color:#C850C0;
+    font-size: 28px;
+    font-weight: 800;
+    
+}
+.suggestions{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+}
+.block{
+    width: 150px;
+    height: 300px;
+    border: 1 transparent solid;
+    border-radius: 6px;
+    margin-left: 8px;
+}
+.block:hover{
+    border:2px #C850C0 solid;
+    transition: all 0.2s ease; 
+}
+.photo{
+    width: 142px;
+    margin-left: 2px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+#block-1{
+    background-image: url(images/600x600bf-60.jpg);
+}
+#block-2{
+    background-image: url(images/1200x1200bf-60.jpg);
+}
+#block-3{
+    background-image: url(images/ab67616d0000b27326d45b50f2016fed43d54320.jpeg);
+}
+#block-4{
+    background-image: url(images/ab67616d0000b27389a392107ebd79818022b3ea.jpeg);
+}
+#block-5{
+    background-image: url(images/Viking_Death_March.jpg);
+}
+.info{
+    background-color: white;
+    margin-left: 2px;
+    opacity: 0.8;
+    width: 142px;
+    height: 148px;
+}
+.info h3{
+    color:#282C34;
+    opacity: 0.9;
+}
+.info p{
+    color:#282C34
+}
+footer {
+    margin-top: 30px;
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Vertical padding */
+    
+}
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 32px;
+    opacity: 0.8;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin-top:20px;
+    display: flex;
+    gap: 15px; /* Space between social media links */
+  }
+  
+  .social-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin:0px 15px;
+    transition: color 0.3s ease;
+  }
+  .scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #C850C0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+    z-index: 9999; /* Öne çıkar */
+    opacity: 1; /* Tam görünür */
+  }
+  
+  .scroll-top-btn:hover {
+    background-color: #C850C0;
+    transition: 0.3s;
+    opacity: 0.7;
+  }
+  .social-links li a:hover {
+    color: #C850C0; /* Neon-like hover effect */
+  }

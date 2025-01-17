@@ -1,0 +1,192 @@
+body::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(43deg, #4158D0, #C850C0);
+    border-radius: 10px; /* Smooth, rounded edges */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+body{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    background-color: #282C34;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    
+}
+.logo{
+    background-image: url(../images/logo.png);
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+  }
+  
+  .mood-filter-container {
+    background: #282C34;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 2px solid #C850C0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .mood-filter-container h2 {
+    margin-bottom: 20px;
+    color: white;
+    opacity: 0.8;
+  }
+  
+  .mood-option {
+    margin: 35px 0;
+  }
+  
+  .mood-option input[type="radio"] {
+    display: none;
+  }
+  
+  .mood-option label {
+    padding: 10px 20px;
+    border: 2px solid #C850C0;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .mood-option input[type="radio"]:checked + label {
+    background-color: #4caf50;
+    color: #fff;
+    border-color: #4caf50;
+    box-shadow: 0 4px 6px rgba(76, 175, 80, 0.3);
+  }
+  
+  .mood-option label:hover {
+    background-color: #C850C0;
+    border-color: #4caf50;
+  }
+  label{
+    color: white;
+    opacity: 0.8;
+  }
+  .suggest{
+    visibility: hidden;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+.suggest-p{
+    color:#C850C0;
+    font-size: 28px;
+    font-weight: 800;
+    
+}
+.suggestions{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+}
+.block{
+    width: 200px;
+    height: 200px;
+    border: 1 transparent solid;
+    border-radius: 6px;
+    margin-left: 8px;
+}
+
+.photo{
+    width: 200px;
+    margin-left: 2px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.info p{
+    color:white;
+    opacity: 0.9;
+    font-size: 26px;
+}
+.comment-form {
+  position: absolute;
+  top:550px;
+  background: #282C34;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.comment-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+}
+
+.comment-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.comment-form input, .comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.comment-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.comment-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #C850C0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Let's Generate</title>
+</head>
+<body>
+    <header>   
+        <a href="../index.html" class="logo"></a>
+    </header>
+    <div class="mood-filter-container">
+        <h2>Select Your Mood</h2>
+        <form>
+          <div class="mood-option">
+            <input type="radio" id="happy" name="mood" value="happy">
+            <label id="mylabel" for="happy">Happy</label>
+          </div>
+          <div class="mood-option">
+            <input type="radio" id="sad" name="mood" value="sad">
+            <label onclick="" id="mylabel1" for="sad">Sad</label>
+          </div>
+          <div class="mood-option">
+            <input type="radio" id="relaxed" name="mood" value="relaxed">
+            <label onclick="" id="mylabel2" for="relaxed">Relaxed</label>
+          </div>
+          <div class="mood-option">
+            <input type="radio" id="nostalgic" name="mood" value="nostalgic">
+            <label onclick="" id="mylabel3" for="nostalgic">Nostalgic</label>
+          </div>
+          
+        </form>
+      </div>
+      <div id="suggest" class="suggest">
+        <div class="suggestions">
+            <div class="block">
+                <div id="block-1" class="photo"></div>
+                <div class="info">
+                    <p id="p">Die With A Smile - Single</p>
+                </div>
+                </a>
+            </div>
+            <div class="block">
+              <div id="block-2" class="photo"></div>
+              <div class="info">
+                  <p id="p-1">Phenomenon</p>
+              </div>
+              </a>
+          </div>
+          </div>
+          </div>
+          <form id="comment-form" class="comment-form" action="save_comment.php" method="POST">
+            <h2>Leave a Comment</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+        
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" placeholder="Your comment" required></textarea>
+        
+            <button onclick="myFunction()" href="index.html" type="submit">Submit</button>
+          </form>
+      <script src="script.js">
+        function myFunction() {
+  alert("Gonderildi");
+}
+      </script>
+</body>
+</html>
